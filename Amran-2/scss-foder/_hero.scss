@@ -1,0 +1,39 @@
+.hero {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  .hero-title {
+    line-height: 50px;
+    h1 {
+      font-size: 40px;
+      color: $color;
+    }
+    h2 {
+      text-transform: capitalize;
+      font-size: 40px;
+      font-weight: $fotw;
+      color: $primary;
+    }
+    .hero-buttton {
+      display: flex;
+      margin-top: 20px;
+    }
+    button {
+      padding: 15px 50px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: $fotw;
+      transition: 0.5s;
+      background: $color;
+      color: $primary;
+      cursor: pointer;
+      transition: 0.5s;
+      border: none;
+
+      .hero-buttton button {
+        background: $primary;
+        color: $color;
+      }
+    }
+  }
+}

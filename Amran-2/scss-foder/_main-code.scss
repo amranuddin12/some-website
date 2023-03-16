@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//   variabale
+$font: 15px;
+$primary: white;
+$color: #ff7200;
+$fotw: 500;
+$fontfamily: arial;
+
+//   mixin
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

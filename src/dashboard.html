@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard design</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="bg-black">
+    <div class="min-h-screen bg-gray-900">
+      <nav>
+        <div
+          class="py-[40px] bg-gray-900 shadow-sm flex lg:justify-between items-center lg:pr-8 lg:pl-80 md:px-[50px] sm:px-[40px] px-[40px]"
+        >
+          <div>
+            <div class="lg:hidden sm:block md:block block">
+              <i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6 text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
+          <div class="relative lg:block sm:hidden md:hidden hidden">
+            <input
+              class="py-2 lg:pl-10 lg:pr-3 lg:w-[800px] md:w-[400px] sm:w-[300px] border-none rounded-xl focus:outline-none bg-gray-700 text-white shadow"
+              type="search"
+              name=""
+              id=""
+              placeholder="Search.."
+            />
+            <span
+              class="absolute top-1/2 -translate-y-1/2 left-0 px-4 lg:block md:hidden sm:hidden hidden"
+            >
+              <svg
+                class="text-gray-500"
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"
+                ></path>
+              </svg>
+            </span>
+          </div>
+          <div class="flex items-center ml-auto">
+            <div>
+              <svg
+                class="w-6 cursor-pointer text-gray-50 hover:text-gray-400 duration-300"
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 16 16"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+                ></path>
+              </svg>
+            </div>
+            <div class="ml-5 relative">
+              <div class="cursor-pointer">
+                <img
+                  id="dropdown"
+                  class="w-5 h-5 rounded-full"
+                  src="./img/profile.png"
+                  alt=""
+                />
+              </div>
+              <div
+                id="dropdown_content"
+                class="hidden absolute z-50 mt-2 rounded-md shadow-lg w-48 right-0 py-1 bg-white"
+              >
+                <div class="px-4 py-2 text-xs text-gray-400">
+                  Manage Accound
+                </div>
+                <a
+                  href="£"
+                  class="block px-4 py-2 text-xs leading-5 text-gray-700 hover:bg-gray-100 transition"
+                  >Profile</a
+                >
+                <div class="px-4 py-2 text-xs text-gray-400"></div>
+                <a
+                  href="£"
+                  class="block px-4 py-2 text-xs leading-5 text-gray-700 hover:bg-gray-100 transition"
+                  >Logout</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- nav end -->
+      <!-- dashboard started -->
+      <div
+        class="w-[200px] h-full bg-gray-900 shadow-md z-10 fixed left-0 top-0 pl-[50px] md:hidden sm:hidden hidden lg:block"
+      >
+        <div
+          class="text-white bg-gray-900 text-center font-semibold py-5 capitalize text-2xl"
+        >
+          skateboard
+        </div>
+        <div class="py-5">
+          <a
+            href="£"
+            class="flex items-center my-1 px-4 py-3 text-white border-l-4 border-blue-600 hover:text-gray-400"
+          >
+            <svg
+              class="w-5 mr-3"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              />
+            </svg>
+
+            Dashboard</a
+          >
+          <a
+            href="£"
+            class="flex items-center my-1 px-4 py-3 text-white border-l-4 border-transparent hover:border-blue-600 hover:text-gray-400 transition"
+          >
+            <svg
+              class="w-5 mr-3"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 6h.008v.008H6V6z"
+              />
+            </svg>
+
+            Category</a
+          >
+          <a
+            href="£"
+            class="flex items-center my-1 px-4 py-3 text-white border-l-4 border-transparent hover:border-blue-600 hover:text-gray-400 transition"
+          >
+            <svg
+              class="w-5 mr-3"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
+              <path
+                fill-rule="evenodd"
+                d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 14.625v-9.75zM8.25 9.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM18.75 9a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V9.75a.75.75 0 00-.75-.75h-.008zM4.5 9.75A.75.75 0 015.25 9h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75V9.75z"
+                clip-rule="evenodd"
+              />
+              <path
+                d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z"
+              />
+            </svg>
+
+            Product</a
+          >
+
+          <a
+            href="£"
+            class="flex items-center my-1 px-4 py-3 text-white border-l-4 border-transparent hover:border-blue-600 hover:text-gray-400 transition"
+          >
+            <svg
+              class="mr-3 w-5"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                clip-rule="evenodd"
+              />
+            </svg>
+
+            User</a
+          >
+          <a
+            href="£"
+            class="flex items-center my-1 px-4 py-3 text-white border-l-4 border-transparent hover:border-blue-600 hover:bg-gray-900 transition"
+          >
+            <svg
+              class="w-5 mr-3"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                d="M6.25 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM3.25 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM19.75 7.5a.75.75 0 00-1.5 0v2.25H16a.75.75 0 000 1.5h2.25v2.25a.75.75 0 001.5 0v-2.25H22a.75.75 0 000-1.5h-2.25V7.5z"
+              />
+            </svg>
+
+            Contact</a
+          >
+        </div>
+      </div>
+      <div class="lg:pt-3 lg:pr-8 lg:pl-80 md:pl-[40px] sm:pl-5 pl-[40px]">
+        <h1 class="text-[35px] text-white font-semibold">Discover</h1>
+      </div>
+      <!-- board container -->
+      <div
+        class="lg:pt-3 lg:pr-8 lg:pl-80 md:flex md:flex-col md:gap-[30px] sm:pl-[40px] sm:pt-[20px] pt-[20px] sm:px-[50px] px-[50px]"
+      >
+        <div
+          class="lg:flex lg:justify-between lg:items-center lg:gap-3 sm:flex sm:flex-col sm:items-center sm:gap-[30px] lg:flex-row flex-col gap-[30px] flex items-center"
+        >
+          <!-- main-div -->
+          <div class="relative">
+            <div class="">
+              <img
+                class="lg:w-[600px] lg:h-[350px] align-middle md:w-[800px] md:h-full sm:w-full w-full rounded-xl"
+                src="./img/sk.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="absolute lg:top-4 lg:left-5 md:top-[100px] md:left-[20px] sm:top-[100px] sm:left-[20px] top-[10px] left-2"
+            >
+              <span
+                class="text-white capitalize font-bold font-serif lg:text-[30px] md:text-[30px] sm:text-[20px] text-[15px]"
+              >
+                How to do <br />
+                basic jumping <br />
+                and how to <br />
+                landing safely</span
+              >
+              <div class="flex mt-4 gap-3">
+                <div class="">
+                  <img
+                    class="lg:w-[50px] lg:h-[50px] md:w-[50px] md:h-[50px] sm:w-[30px] sm:h-[30px] w-[30px] h-[30px] rounded-full ring-2 ring-pink-400"
+                    src="./img/man-p3.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h1 class="text-white font-semibold">Thomas Hope</h1>
+                  <p class="text-gray-300 text-xs">53k Views . 2 weeks ago</p>
+                </div>
+                <div class="mt-[100px] ml-[300px] lg:block sm:hidden hidden">
+                  <p
+                    class="bg-gray-900 text-gray-300 rounded-lg w-10 text-base"
+                  >
+                    7min
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second pic  -->
+          <div class="relative">
+            <div>
+              <img
+                class="lg:w-[400px] lg:h-[350px] md:w-[800px] md:h-[350px] sm:w-full w-full rounded-xl mr-[150px]"
+                src="./img/bla.png"
+                alt=""
+              />
+            </div>
+            <div class="absolute top-4 left-5">
+              <span
+                class="text-white capitalize font-bold font-serif lg:text-[30px] sm:text-[20px] text-[15px]"
+              >
+                skateboard <br />
+                tips you need <br />
+                to know</span
+              >
+              <div class="lg:mt-4">
+                <div class="">
+                  <div>
+                    <h1 class="text-white font-semibold">Tony Andrew</h1>
+                    <p class="text-gray-100 text-xs">12k Views . 3 weeks ago</p>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    class="lg:w-[50px] lg:h-[50px] sm:w-[30px] sm:h-[30px] w-[30px] h-[30px] rounded-full ring-2 ring-orange-400 mt-5"
+                    src="./img/women-2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="mt-[40px] ml-[320px] lg:block sm:hidden hidden">
+                  <p
+                    class="bg-gray-900 text-gray-300 rounded-lg w-10 text-base"
+                  >
+                    7min
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- most waatched part started -->
+        <div class="mt-4">
+          <h1 class="text-xl font-semibold text-white font-sans">
+            Most watched
+          </h1>
+        </div>
+        <!-- card part started -->
+        <!-- card container -->
+        <div
+          class="w-full lg:flex lg:justify-between gap-4 mt-4 lg:pr-[150px] md:flex md:flex-col sm:flex sm:flex-col-3 lg:flex-row flex flex-col"
+        >
+          <div class="w-[300px] p-2 bg-transparent rounded-lg">
+            <div class="relative">
+              <div>
+                <img
+                  class="w-[300px] rounded-t-lg"
+                  src="./img/skboard 2.png"
+                  alt=""
+                />
+              </div>
+              <div class="absolute right-0 bottom-[115px] mr-2">
+                <p class="text-white bg-gray-700 rounded-md text-[12px]">
+                  7min
+                </p>
+              </div>
+              <div class="absolute left-0 -bottom-3 ml-[160px] p-1">
+                <img
+                  class="w-10 h-10 rounded-full ring-2 ring-amber-600"
+                  src="./img/women 1.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="bg-gray-800 rounded-b-md p-1">
+              <div class="flex mt-5 gap-3">
+                <div>
+                  <h1 class="text-xs text-gray-600 font-sans font-semibold">
+                    Andy Williamson
+                  </h1>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-1 h-1 object-cover rounded-full ring-2 ring-green-400"
+                    src="./img/green.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div>
+                <p class="text-white font-semibold text-xl">
+                  Basic how to ride your <br />
+                  skateboard comportly
+                </p>
+                <span class="text-xs text-gray-500"
+                  >53k views . 2 weeks ago</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 2nd card design -->
+
+          <div class="w-[300px] p-2">
+            <div class="relative">
+              <div>
+                <img
+                  class="w-[300px] h-[146px] object-cover rounded-t-lg"
+                  src="./img/skboard 3.png"
+                  alt=""
+                />
+              </div>
+              <div class="absolute right-0 bottom-[115px] mr-2">
+                <p class="text-white bg-gray-700 rounded-md text-[12px]">
+                  7min
+                </p>
+              </div>
+              <div class="absolute left-0 -bottom-3 ml-[160px]">
+                <img
+                  class="w-10 h-10 rounded-full ring-2 ring-amber-600"
+                  src="./img/man-p3.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="bg-gray-800 rounded-b-md p-1">
+              <div class="flex mt-5 gap-3">
+                <div>
+                  <h1 class="text-xs text-gray-600 font-sans font-semibold">
+                    Jony wise
+                  </h1>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-1 h-1 rounded-full ring-2 ring-red-800"
+                    src="./img/red.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div>
+                <p class="text-white font-semibold text-xl">
+                  Prepare for your first <br />
+                  skateboard jump
+                </p>
+                <span class="text-xs text-gray-500"
+                  >9.3k views . 2 weeks ago</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 3rd card design -->
+          <div class="w-[300px] p-2 rounded-lg">
+            <div class="relative">
+              <div>
+                <img
+                  class="w-[300px] h-[146px] object-cover rounded-t-lg"
+                  src="./img/skboard 5.png"
+                  alt=""
+                />
+              </div>
+              <div class="absolute right-0 bottom-[115px] mr-2">
+                <p class="text-white bg-gray-700 rounded-md text-[12px]">
+                  7min
+                </p>
+              </div>
+              <div class="absolute left-0 -bottom-3 ml-[160px]">
+                <img
+                  class="w-10 h-10 rounded-full ring-2 ring-amber-600"
+                  src="img/man p.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="bg-gray-800 rounded-b-md p-1">
+              <div class="flex mt-5 gap-3">
+                <div>
+                  <h1 class="text-xs text-gray-600 font-sans font-semibold">
+                    Budy Hakim
+                  </h1>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-1 h-1 rounded-full ring-2 ring-green-400"
+                    src="./img/green.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div>
+                <p class="text-white font-semibold text-xl">
+                  Playing to skateboard <br />
+                  on the ramp
+                </p>
+                <span class="text-xs text-gray-500"
+                  >12k views . 2 weeks ago</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- 4th card design -->
+          <div class="w-[300px] p-2 rounded-lg">
+            <div class="relative">
+              <div>
+                <img
+                  class="w-[300px] h-[146px] object-cover rounded-t-lg"
+                  src="./img/skateboard.png"
+                  alt=""
+                />
+              </div>
+              <div class="absolute right-0 bottom-[115px] mr-2">
+                <p class="text-white bg-gray-700 rounded-md text-[12px]">
+                  7min
+                </p>
+              </div>
+              <div class="absolute left-0 -bottom-3 ml-[160px]">
+                <img
+                  class="w-10 h-10 rounded-full ring-2 ring-amber-600"
+                  src="./img/women-2.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-b-md p-1">
+              <div class="flex mt-5 gap-3">
+                <div>
+                  <h1 class="text-xs text-gray-600 font-sans font-semibold">
+                    Julian Albart
+                  </h1>
+                </div>
+                <div class="flex justify-center items-center">
+                  <img
+                    class="w-1 h-1 rounded-full ring-2 ring-green-400"
+                    src="./img/green.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div>
+                <p class="text-white font-semibold text-xl">
+                  Basic equipment play <br />
+                  skateboard safely
+                </p>
+                <span class="text-xs text-gray-500"
+                  >2k views . 2 weeks ago</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("dropdown")
+        .addEventListener("click", function () {
+          document
+            .getElementById("dropdown_content")
+            .classList.toggle("hidden");
+        });
+    </script>
+  </body>
+</html>
